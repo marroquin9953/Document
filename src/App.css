@@ -1,0 +1,63 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  background: #21868a;
+}
+
+.img-preview {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  max-width: 780px;
+}
+
+.controller {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 999;
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+}
+.controller-body {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.fertig-btn {
+  color: #21868a;
+}
+.abbruch-btn,
+.fertig-btn,
+.camera-btn {
+  background: none;
+  padding: 4px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+}
+.camera-btn {
+  border-radius: 50%;
+  border: 5px solid red;
+  padding: 4px;
+}
+
+.abbruch-btn:hover,
+.camera-btn:hover,
+.fertig-btn:hover {
+  background: rgb(231, 229, 229);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 360px) {
+  .abbruch-btn,
+  .fertig-btn {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+}
